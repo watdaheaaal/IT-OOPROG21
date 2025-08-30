@@ -1,0 +1,39 @@
+import java.util.Scanner
+
+class PrelimAct3 {
+  public static void main(String[] args){
+  
+  int a,b,c,d,e;
+  Scanner scanf = new Scanner(System.in);
+
+  System.out.printf("Enter 1st number: ");
+  a = scanf.nextInt();
+
+  System.out.printf("Enter 2nd number: ");
+  b = scanf.nextInt();
+
+  System.out.printf("Enter 3rd number: ");
+  c = scanf.nextInt();
+
+  System.out.printf("Enter 4th number: ");
+  d = scanf.nextInt();
+
+  System.out.printf("Enter 5th number: ");
+  e = scanf.nextInt();
+
+  if(a < b && a < c && a < d && a && e){
+    System.out.printf("%d is the highest.", a)
+  }else if(b < a && b < c && b < d && b < e){
+    System.out.printf("%d is the highest.", b)
+  }else if(c < a && c < b && c < d && c < e){
+    System.out.printf("%d is the highest.", c)
+  }else if(d < a && d < b && d < c && d < e){
+    System.out.printf("%d is the highest.", d)
+  }else if(e < a && e < b && e < c && e < d){
+    System.out.printf("%d is the highest.", e)
+  } else{
+    System.out.printf("There is an equal in both numbers");
+  }
+
+  }
+}
